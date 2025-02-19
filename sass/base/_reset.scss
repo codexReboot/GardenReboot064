@@ -50,7 +50,7 @@ html {
 // Set core body styles
 body {
   // fonts reset
-  color: $cf-dark;
+  color: $dark-green;
   .merry-regular {
     font-family: "Merriweather", serif;
     font-weight: 400;
@@ -61,7 +61,7 @@ body {
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $cp-dark;
+  background-color: $dark-green;
   // box-sizing
   box-sizing: inherit;
 }

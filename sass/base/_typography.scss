@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 // Headings
 // <weight>: Use a value from 300 to 700
 // <uniquifier>: Use a unique and descriptive class name
@@ -37,4 +39,41 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+.nav {
+  &__link {
+    color: $light-cream;
+    font-family: "Nunito", serif;
+    font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @include respond(tab-land) {
+      color: $dark-green;
+    }
+  }
+}
+
+.logoText {
+  line-height: 1.1;
+  &--heading {
+    color: $accent-orange;
+    font-family: "Quicksand", serif;
+    font-size: clamp(1.4rem, 5vw, 1.6rem);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+  }
+  &--headingGreen {
+    color: $primary-green;
+  }
+  &--slogan {
+    color: rgba($dark-green, 0.65);
+    font-family: "Merriweather", serif;
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+  }
 }

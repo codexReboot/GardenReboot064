@@ -47,6 +47,43 @@ ORDER: base + typography > general layout + grid > page layout > components
   font-style: normal;
 }
 
+.nav__link {
+  color: #FAF3E0;
+  font-family: "Nunito", serif;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+@media (min-width: 56.25em) {
+  .nav__link {
+    color: #2F3E46;
+  }
+}
+
+.logoText {
+  line-height: 1.1;
+}
+.logoText--heading {
+  color: #ff9148;
+  font-family: "Quicksand", serif;
+  font-size: clamp(1.4rem, 5vw, 1.6rem);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+.logoText--headingGreen {
+  color: #4CAF50;
+}
+.logoText--slogan {
+  color: rgba(47, 62, 70, 0.65);
+  font-family: "Merriweather", serif;
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 *,
 *::before,
 *::after {
@@ -94,13 +131,13 @@ html {
 }
 
 body {
-  color: #292828;
+  color: #2F3E46;
   font-size: 1.6rem;
   line-height: 1.6;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #333333;
+  background-color: #2F3E46;
   box-sizing: inherit;
 }
 body .merry-regular {
@@ -160,12 +197,116 @@ h6 {
   transition: outline 0.2s ease-in-out;
 }
 
+.logoImg--nav {
+  display: block;
+  width: 6rem;
+  height: auto;
+}
+
 .footer {
   background-color: rgba(255, 69, 0, 0.5);
 }
 
+/* Basic styles for the navbar */
 .nav {
-  background-color: greenyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.75rem 0.5rem;
+  background-color: #FAF3E0; /* Light cream color */
+  min-height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Hamburger Button Styles */
+}
+.nav__logoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0;
+}
+.nav__logoTextBox {
+  margin-left: 0.25rem;
+}
+.nav__link {
+  transition: color 0.3s ease;
+}
+.nav__link:hover {
+  color: #4CAF50; /* Primary green color */
+}
+.nav__hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+.nav__hamburger div {
+  background-color: #2F3E46;
+  height: 3px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Mobile */
+.nav__list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 7.3rem;
+  right: 0;
+  background-color: #2F3E46;
+  width: 100%;
+  text-align: center;
+  padding: 5rem 1rem 1rem;
+}
+
+.nav__list.show {
+  display: flex;
+}
+
+.nav__hamburger {
+  display: flex;
+}
+
+.nav__hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+
+.nav__hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -10px);
+}
+
+/* Tablet Portrait */
+@media (min-width: 56.25em) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    top: 0;
+    height: 7rem;
+    background-color: transparent;
+    padding: 1rem;
+  }
+  .nav__hamburger {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

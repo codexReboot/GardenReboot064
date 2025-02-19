@@ -1,3 +1,100 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+/* Basic styles for the navbar */
 .nav {
-      background-color: greenyellow;
+  @include displayFlexRow;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.75rem 0.5rem;
+  background-color: $light-cream; /* Light cream color */
+  min-height: 6rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__logoBox {
+    @include displayFlexRow;
+    gap: 0;
+  }
+
+  &__logoTextBox {
+    margin-left: 0.25rem;
+  }
+
+  &__link {
+    transition: color 0.3s ease;
+  }
+
+  &__link:hover {
+    color: $primary-green; /* Primary green color */
+  }
+
+  /* Hamburger Button Styles */
+  &__hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+
+  &__hamburger div {
+    background-color: $dark-green;
+    height: 3px;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Mobile */
+.nav__list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 7.3rem;
+  right: 0;
+  background-color: $dark-green;
+  width: 100%;
+  text-align: center;
+  padding: 5rem 1rem 1rem;
+}
+
+.nav__list.show {
+  display: flex;
+}
+
+.nav__hamburger {
+  display: flex;
+}
+
+.nav__hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+
+.nav__hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -10px);
+}
+
+/* Tablet Portrait */
+@include respond(tab-land) {
+  .nav__list {
+    @include displayFlexRow;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    top: 0;
+    height: 7rem;
+    background-color: transparent;
+    padding: 1rem;
+  }
+
+  .nav__hamburger {
+    display: none;
+  }
 }
