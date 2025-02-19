@@ -10,19 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="public/css/main.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#prices">Prices</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <header>
+    <header class="header">
+      <nav class="header__nav nav">
+        <div class="nav__logoBox">
+              <img src="logo.png" alt="GreenThumb Gardening Logo" class="nav__logo logo" />
+        </div>    
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">About Us</a></li>
+          <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+          <li class="nav__item"><a class="nav__link" href="#prices">Prices</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
       <h1>Welcome to GreenThumb Gardening</h1>
       <p>Your trusted gardening and landscaping experts!</p>
     </header>
