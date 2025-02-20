@@ -55,6 +55,17 @@
   }
 }
 
+.btn {
+  color: $white;
+  font: "Nunito", serif;
+  font-size: clamp(1.6rem, 6vw, 1.8rem);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba($dark-green, 1);
+}
+
 .logoText {
   line-height: 1.1;
   &--heading {
@@ -65,8 +76,17 @@
     font-style: normal;
     font-weight: 900;
   }
+  &--headingHero {
+    font-size: clamp(2.8rem, 5vw, 3rem);
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba($dark-green, 1);
+  }
   &--headingGreen {
     color: $primary-green;
+  }
+  &--headingGreenHero {
+    color: $primary-green;
+    font-size: clamp(3.2rem, 5vw, 3.4rem);
   }
   &--slogan {
     color: rgba($dark-green, 0.65);
@@ -75,5 +95,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.2;
+  }
+  &--sloganHero {
+    color: rgba($white, 0.85);
+    font-size: clamp(2rem, 4vw, 2.2rem);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba($dark-green, 1);
+  }
+}
+
+.hero {
+  &__intro {
+    color: rgba($white, 0.85);
+    font-size: clamp(1.4rem, 5vw, 1.6rem);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba($dark-green, 1);
   }
 }

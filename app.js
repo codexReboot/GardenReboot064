@@ -9,3 +9,22 @@ hamburger.addEventListener('click', () => {
     navList.classList.toggle('show');
     hamburger.classList.toggle('open');
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".hero__slide");
+    const indexItems = document.querySelectorAll(".hero__index");
+    let currentSlide = 0;
+
+    function changeSlide() {
+        slides[currentSlide].classList.remove("active");
+        indexItems[currentSlide].classList.remove("active");
+        
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        slides[currentSlide].classList.add("active");
+        indexItems[currentSlide].classList.add("active");
+    }
+
+    // Change slide every 5 seconds
+    setInterval(changeSlide, 5000);
+});

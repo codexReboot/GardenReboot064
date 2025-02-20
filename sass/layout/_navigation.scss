@@ -5,14 +5,15 @@
 .nav {
   @include displayFlexRow;
   justify-content: space-between;
-  padding: 0.5rem 1rem 0.75rem 0.5rem;
   background-color: $light-cream; /* Light cream color */
-  min-height: 6rem;
+  // min-height: 6rem;
+  padding: 0.5rem 1rem 0.75rem 0.5rem;
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 
   &__logoBox {
     @include displayFlexRow;
@@ -34,11 +35,11 @@
   /* Hamburger Button Styles */
   &__hamburger {
     display: none;
-    cursor: pointer;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 25px;
+    width: 3rem;
+    height: 2.5rem;
+    cursor: pointer;
   }
 
   &__hamburger div {
@@ -53,25 +54,28 @@
 .nav__list {
   display: none;
   flex-direction: column;
+  align-items: center;
+  background-color: $dark-green;
+  width: 100%;
+  // min-height: 95vh;
+  padding: 5rem 1rem 1rem;
   position: absolute;
   top: 7.3rem;
   right: 0;
-  background-color: $dark-green;
-  width: 100%;
-  text-align: center;
-  padding: 5rem 1rem 1rem;
 }
 
 .nav__list.show {
   display: flex;
+  min-height: 95vh;
 }
 
 .nav__hamburger {
   display: flex;
 }
 
+/* Hamburger Animation*/
 .nav__hamburger.open div:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 10px);
+  transform: rotate(45deg) translate(.5rem, 1rem);
 }
 
 .nav__hamburger.open div:nth-child(2) {
@@ -79,22 +83,29 @@
 }
 
 .nav__hamburger.open div:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -10px);
+  transform: rotate(-45deg) translate(.5rem, -1rem);
 }
 
 /* Tablet Portrait */
 @include respond(tab-land) {
-  .nav__list {
-    @include displayFlexRow;
-    justify-content: flex-end;
-    gap: 2.5rem;
-    top: 0;
-    height: 7rem;
-    background-color: transparent;
-    padding: 1rem;
-  }
+  .nav {
+    &__list {
+      @include displayFlexRow;
+      justify-content: flex-end;
+      // align-items: flex-start;
+      gap: 2.5rem;
+      background-color: transparent;
+      // height: 7rem;
+      padding: 1rem;
 
-  .nav__hamburger {
-    display: none;
+      position: fixed;
+      top: 1rem;
+      left: 0;
+      right: 0;
+    }
+
+    &__hamburger {
+      display: none;
+    }
   }
 }
