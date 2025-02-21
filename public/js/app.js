@@ -1,4 +1,4 @@
-console.log("Hello World!");
+import { updateCopyrightYear } from './modules/getCopyrightYear.js';
 
 // Select the hamburger button and the nav list
 const hamburger = document.querySelector('.nav__hamburger');
@@ -28,3 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Change slide every 5 seconds
     setInterval(changeSlide, 5000);
 });
+
+
+// Call the function to set the copyright year
+updateCopyrightYear();
