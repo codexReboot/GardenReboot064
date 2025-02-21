@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenThumb Gardening</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Styles Link -->
     <link rel="stylesheet" href="public/css/main.css" />
   </head>
   <body>
@@ -57,9 +59,16 @@
             <img class="logoImg logoImg--hero" src="./public/img/logo/GreenThumbGardeningLogo500X50019Feb2025.png" />
           </div>
           <div class="hero__logoTextBox">
-            <h1 class="hero__title logoText logoText--heading logoText--headingHero"><span class="logoText--headingGreen logoText--headingGreenHero">GreenThumb</span> <br class="logoText__heroHeadingLineBreak">Gardening Services</h1>
+            <h1 class="hero__title logoText logoText--heading logoText--headingHero">
+              <span class="logoText--headingGreen logoText--headingGreenHero">GreenThumb</span>
+              <br class="logoText__heroHeadingLineBreak" />Gardening Services
+            </h1>
             <p class="hero__slogan logoText logoText--slogan logoText--sloganHero">Your Your Garden | Our Passion</p>
-            <p class="hero__intro">At GreenThumb Gardening Services, we create stupid stuff and maintain vibrant, healthy gardens with expert care. From lush landscapes to routine garden maintenance, we keep your outdoor spaces thriving year-round. Let’s grow something beautiful together!</p>
+            <p class="hero__intro">
+              At GreenThumb Gardening Services, we create stupid stuff and maintain vibrant, healthy gardens with expert
+              care. From lush landscapes to routine garden maintenance, we keep your outdoor spaces thriving year-round.
+              Let’s grow something beautiful together!
+            </p>
           </div>
           <div class="hero__cta">
             <a href="#services" class="hero__btn btn btn--hero">Explore Our Services &rarr;</a>
@@ -126,12 +135,21 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <!-- Logo & Logotext -->
-        <div class="footer__brand">
-          <img src="logo.png" alt="GreenThumb Gardening Logo" class="footer__logo">
-          <p class="footer__text">GreenThumb Gardening</p>
+        <!-- Logobox & Logotext -->
+        <div class="nav__logoBox">
+          <img
+            class="nav__logoImg logoImg logoImg--nav"
+            src="public/img/logo/GreenThumbGardeningLogo500X50019Feb2025.png"
+            alt="GreenThumb Gardening Logo"
+          />
+          <div class="nav__logoTextBox logoTextBox">
+            <p class="nav__logoText logoText logoText--heading">
+              <span class="logoText--headingGreen">GreenThumb</span> <br />Gardening Services
+            </p>
+            <p class="nav__logoSlogan logoText logoText--slogan">Your Garden | Our Passion</p>
+          </div>
         </div>
-    
+
         <!-- Navigation -->
         <nav class="footer__nav">
           <ul class="footer__nav-list">
@@ -141,37 +159,45 @@
             <li class="footer__nav-item"><a href="/contact" class="footer__nav-link">Contact</a></li>
           </ul>
         </nav>
-    
+
         <!-- Contact Details -->
         <div class="footer__contact">
-          <p class="footer__contact-item">Email: <a href="mailto:info@greenthumb.com" class="footer__link">info@greenthumb.com</a></p>
+          <p class="footer__contact-item">
+            Email: <a href="mailto:info@greenthumb.com" class="footer__link">info@greenthumb.com</a>
+          </p>
           <p class="footer__contact-item">Phone: <a href="tel:+1234567890" class="footer__link">+1 234 567 890</a></p>
           <p class="footer__contact-item">Location: 123 Green St, Garden City</p>
         </div>
-    
+
         <!-- Social Media -->
         <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook" class="footer__social-icon"></a>
-          <a href="#" class="footer__social-link" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram" class="footer__social-icon"></a>
-          <a href="#" class="footer__social-link" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter" class="footer__social-icon"></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"
+            ><img src="facebook-icon.png" alt="Facebook" class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"
+            ><img src="instagram-icon.png" alt="Instagram" class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"
+            ><img src="twitter-icon.png" alt="Twitter" class="footer__social-icon"
+          /></a>
         </div>
-    
-        <!-- Developer Credit -->
-        <div class="footer__developer">
-          <p class="footer__developer-text">
-            Website designed and developed by: 
-            <a href="https://codexreboot.com" class="footer__developer-link" target="_blank" rel="noopener noreferrer">
-              <img src="codexreboot-logo.png" alt="codexReboot Logo" class="footer__developer-logo">
-              codexReboot
-            </a>
-          </p>
-        </div>
-    
+
         <!-- Copyright -->
         <p class="footer__copy">&copy; <span id="copyrightYear"></span> GreenThumb Gardening. All rights reserved.</p>
+
+        <!-- Developer Credit -->
+        <div class="footer__dev">
+          <p class="footer__devIntro">designed and developed by:</p>
+          <a class="footer__devLink" target="_blank" href="https://schalkvandyk.com" rel="noopener noreferrer">
+            <img
+              class="footer__devLogo"
+              src="public/img/logo/codexRebootLogo250X150.png"
+              alt="an image of the logo of the developer - Schalk van Dyk t/a codexReboot"
+            />
+          </a>
+        </div>
       </div>
     </footer>
-  
 
     <script type="module" src="public/js/app.js"></script>
   </body>

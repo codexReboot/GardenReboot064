@@ -1,3 +1,85 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+/* Footer Base Styles */
 .footer {
-      background-color: rgba(orangered, .5)
+  background: $dark-green; /* Dark green */
+  /* Developer Credit Styles */
+  &__dev {
+    @include displayFlexRow;
+    gap: 0;
+  }
+
+  &__devLogo {
+    display: block;
+    width: 10rem;
+    height: auto;
+    transition: all 0.3s;
+    margin-bottom: 0.45rem;
+  }
+
+  &__devLogo:hover {
+    transform: scale(1.1);
+  }
 }
+
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer__nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer__contact-item,
+.footer__copy {
+  font-size: 14px;
+}
+
+.footer__social-link img {
+  width: 24px;
+  margin: 0 8px;
+}
+
+// /* Desktop View */
+// @media (min-width: 768px) {
+//   .footer__container {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     text-align: left;
+//     max-width: 1200px;
+//     margin: auto;
+//   }
+
+//   .footer__nav {
+//     flex: 1;
+//   }
+
+//   .footer__contact,
+//   .footer__social,
+//   .footer__developer {
+//     flex: 1;
+//   }
+// }

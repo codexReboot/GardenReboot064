@@ -117,6 +117,11 @@ ORDER: base + typography > general layout + grid > page layout > components
   text-shadow: 1px 1px 1px #2f3e46;
 }
 
+.footer__devIntro {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+}
+
 *,
 *::before,
 *::after {
@@ -133,10 +138,8 @@ ol {
 html {
   /* Mobile-first base font size */
   font-size: 62.5%;
-  -webkit-text-size-adjust: 62%;
-  -moz-tab-size: 4;
-  tab-size: 4;
   scroll-behavior: smooth;
+  /* Responsive font sizes */
 }
 @media (min-width: 37.5em) {
   html {
@@ -165,18 +168,14 @@ html {
 
 body {
   color: #2F3E46;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #2F3E46;
-  box-sizing: inherit;
-}
-body .merry-regular {
   font-family: "Merriweather", serif;
+  font-size: clamp(1.4rem, 5vw, 1.6rem);
   font-weight: 400;
   font-style: normal;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-sizing: inherit;
 }
 
 a {
@@ -322,8 +321,65 @@ h6 {
     display: none;
   }
 }
+/* Footer Base Styles */
 .footer {
-  background-color: rgba(255, 69, 0, 0.5);
+  background: #2F3E46; /* Dark green */
+  /* Developer Credit Styles */
+}
+.footer__dev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0;
+}
+.footer__devLogo {
+  display: block;
+  width: 10rem;
+  height: auto;
+  transition: all 0.3s;
+  margin-bottom: 0.45rem;
+}
+.footer__devLogo:hover {
+  transform: scale(1.1);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer__nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer__contact-item,
+.footer__copy {
+  font-size: 14px;
+}
+
+.footer__social-link img {
+  width: 24px;
+  margin: 0 8px;
 }
 
 /* Hero Section */

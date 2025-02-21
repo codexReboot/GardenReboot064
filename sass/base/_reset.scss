@@ -21,11 +21,9 @@ ol {
 html {
   /* Mobile-first base font size */
   font-size: 62.5%; // 1rem = 10px
-  -webkit-text-size-adjust: 62%;
-  -moz-tab-size: 4;
-  tab-size: 4;
   scroll-behavior: smooth;
-
+  
+  /* Responsive font sizes */
   @include respond(tab-port) {
     /* 	11px / 16px *100 = 68.75% */
     font-size: 68.75%; // 1rem = 11px
@@ -51,17 +49,14 @@ html {
 body {
   // fonts reset
   color: $dark-green;
-  .merry-regular {
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-	font-size: 1.6rem;
+  font-family: "Merriweather", serif;
+  font-size: clamp(1.4rem, 5vw, 1.6rem);
+  font-weight: 400;
+  font-style: normal;
 	line-height: 1.6;
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $dark-green;
+  text-align: center;
+  // background-color reset
+  background-color: $white;
   // box-sizing
   box-sizing: inherit;
 }

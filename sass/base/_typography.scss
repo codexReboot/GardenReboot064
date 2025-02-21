@@ -112,3 +112,10 @@
     text-shadow: 1px 1px 1px rgba($dark-green, 1);
   }
 }
+
+.footer {
+  &__devIntro {
+    color: rgba($white, .75);
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+  }
+}
