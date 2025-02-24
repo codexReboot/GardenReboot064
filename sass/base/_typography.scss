@@ -114,8 +114,26 @@
 }
 
 .footer {
+  color: rgba($white, .75);
+  &__copyrightBox {
+    line-height: 1;
+  }
+  &__copyrightBusName {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  &__copyrightBusName--green {
+    color: $primary-green;
+  }
+  &__copyrightBusName--orange {
+    color: $accent-orange;
+  }
+  &__rightsReserved {
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+  }
   &__devIntro {
-    color: rgba($white, .75);
     font-size: clamp(1.2rem, 4vw, 1.4rem);
   }
 }

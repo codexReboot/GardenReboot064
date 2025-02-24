@@ -117,8 +117,28 @@ ORDER: base + typography > general layout + grid > page layout > components
   text-shadow: 1px 1px 1px #2f3e46;
 }
 
-.footer__devIntro {
+.footer {
   color: rgba(255, 255, 255, 0.75);
+}
+.footer__copyrightBox {
+  line-height: 1;
+}
+.footer__copyrightBusName {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.footer__copyrightBusName--green {
+  color: #4CAF50;
+}
+.footer__copyrightBusName--orange {
+  color: #ff9148;
+}
+.footer__rightsReserved {
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+}
+.footer__devIntro {
   font-size: clamp(1.2rem, 4vw, 1.4rem);
 }
 
@@ -324,7 +344,29 @@ h6 {
 /* Footer Base Styles */
 .footer {
   background: #2F3E46; /* Dark green */
+  /* Copyright Styles */
   /* Developer Credit Styles */
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+}
+.footer #copyrightYear, .footer__copyrightBusName {
+  margin-bottom: 0.5rem;
+}
+.footer__rightsReserved {
+  display: block;
 }
 .footer__dev {
   display: flex;
@@ -343,13 +385,6 @@ h6 {
 }
 .footer__devLogo:hover {
   transform: scale(1.1);
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
 }
 
 .footer__nav-list {

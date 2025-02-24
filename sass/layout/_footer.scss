@@ -4,6 +4,22 @@
 /* Footer Base Styles */
 .footer {
   background: $dark-green; /* Dark green */
+  &__container {
+    @include displayFlexColumn;
+  }
+
+  /* Copyright Styles */
+  &__copyright {
+    @include displayFlexRow;
+    gap: .5rem;
+  }
+  #copyrightYear, &__copyrightBusName {
+    margin-bottom: .5rem;
+  }
+  &__rightsReserved {
+    display: block;
+  }
+  
   /* Developer Credit Styles */
   &__dev {
     @include displayFlexRow;
@@ -24,12 +40,7 @@
 }
 
 
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
+
 
 
 
