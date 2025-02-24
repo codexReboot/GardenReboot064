@@ -7,6 +7,20 @@
   &__container {
     @include displayFlexColumn;
   }
+  /* Contact Item Styles*/
+  &__contactBox {
+    @include displayFlexColumn;
+    gap: .5rem;
+  }
+
+  &__contactItem {
+    @include displayFlexRow;
+    gap: .25rem;
+  }
+  
+  &__contactItem:nth-Child(2) {
+    gap: .75rem;
+  }
 
   /* Social Media Styles*/
   &__socialMediaBox {
@@ -78,11 +92,6 @@
 
 .footer__nav-link:hover {
   text-decoration: underline;
-}
-
-.footer__contact-item,
-.footer__copy {
-  font-size: 14px;
 }
 
 

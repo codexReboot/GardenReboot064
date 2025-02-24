@@ -1,4 +1,15 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .footer {
+      &__contactItemIcon {
+            display: block;
+            width: 3rem;
+            height: auto;
+      }
+      &__contactItemIconColor {
+            fill: $accent-orange
+      }
       &__socialMediaIcon {
             display: block;
             width: 5rem;
