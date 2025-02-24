@@ -8,6 +8,22 @@
     @include displayFlexColumn;
   }
 
+  /* Social Media Styles*/
+  &__socialMediaBox {
+    @include displayFlexRow;
+    gap: 3rem;
+  }
+
+  &__socialMediaLink {
+    box-shadow: $bs-btn;
+    transition: all 0.3s;
+  }
+
+  &__socialMediaLink:hover {
+    box-sizing: $bs-btnHover;
+    transform: scale(1.1);
+  }
+
   /* Copyright Styles */
   &__copyright {
     @include displayFlexRow;
@@ -69,10 +85,6 @@
   font-size: 14px;
 }
 
-.footer__social-link img {
-  width: 24px;
-  margin: 0 8px;
-}
 
 // /* Desktop View */
 // @media (min-width: 768px) {
