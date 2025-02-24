@@ -371,6 +371,7 @@ h6 {
 /* Footer Base Styles */
 .footer {
   background: #2F3E46; /* Dark green */
+  padding: 3rem 1rem 0rem;
   /* Footer Logo*/
   /* Contact Item Styles*/
   /* Social Media Styles*/
@@ -383,6 +384,15 @@ h6 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  gap: 3rem;
+}
+.footer__logoAndNavBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 3rem;
 }
 .footer__logoBox {
   display: flex;
@@ -394,6 +404,14 @@ h6 {
 }
 .footer__logoTextBox {
   margin-left: 0.25rem;
+}
+.footer__contactAndSocialMediaBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 3rem;
 }
 .footer__contactBox {
   display: flex;
@@ -430,6 +448,14 @@ h6 {
   box-sizing: 0px 6px 35px 3px rgba(47, 62, 70, 0.6);
   transform: scale(1.1);
 }
+.footer__copyAndDevBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+}
 .footer__copyright {
   display: flex;
   flex-direction: row;
@@ -461,26 +487,6 @@ h6 {
 }
 .footer__devLogo:hover {
   transform: scale(1.1);
-}
-
-.footer__nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__nav-item {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.footer__nav-link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__nav-link:hover {
-  text-decoration: underline;
 }
 
 /* Hero Section */

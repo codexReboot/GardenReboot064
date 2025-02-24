@@ -135,136 +135,143 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <!-- Footer Logo -->
-        <div class="footer__logoBox footer__logoBox">
-          <img
-            class="footer__logoImg logoImg logoImg--footer"
-            src="public/img/logo/GreenThumbGardeningLogo500X50019Feb2025.png"
-            alt="GreenThumb Gardening Logo"
-          />
-          <div class="footer__logoTextBox logoTextBox">
-            <p class="footer__logoText logoText logoText--heading">
-              <span class="logoText--headingGreen">GreenThumb</span> <br />Gardening Services
+        <div class="footer__logoAndNavBox">
+          <!-- Footer Logo -->
+          <div class="footer__logoBox footer__logoBox">
+            <img
+              class="footer__logoImg logoImg logoImg--footer"
+              src="public/img/logo/GreenThumbGardeningLogo500X50019Feb2025.png"
+              alt="GreenThumb Gardening Logo"
+            />
+            <div class="footer__logoTextBox logoTextBox">
+              <p class="footer__logoText logoText logoText--heading">
+                <span class="logoText--headingGreen">GreenThumb</span> <br />Gardening Services
+              </p>
+              <p class="footer__logoSlogan logoText logoText--slogan logoText--sloganFooter">
+                Your Garden | Our Passion
+              </p>
+            </div>
+          </div>
+
+          <!-- Footer Navigation -->
+          <nav class="footer__nav">
+            <ul class="footer__navList">
+              <li class="footer__navItem"><a class="footer__navLink" href="/">Home</a></li>
+              <li class="footer__navItem"><a class="footer__navLink" href="/about">About</a></li>
+              <li class="footer__navItem"><a class="footer__navLink" href="/services">Services</a></li>
+              <li class="footer__navItem"><a class="footer__navLink" href="/prices">Prices</a></li>
+              <li class="footer__navItem"><a class="footer__navLink" href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__contactAndSocialMediaBox">
+          <!-- Contact Details -->
+          <div class="footer__contactBox">
+            <p class="footer__contactItem">
+              <svg
+                class="footer__contactItemIcon"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="footer__contactItemIconColor"
+                  d="M8.64794 5.66784L9.4226 4.89319C9.9159 4.39989 10.7157 4.39989 11.209 4.89319L14.4752 8.15944C14.9685 8.65274 14.9685 9.45252 14.4752 9.94582L12.2111 12.2099C11.8336 12.5875 11.74 13.1642 11.9788 13.6418C13.3591 16.4024 15.5976 18.6409 18.3582 20.0212C18.8358 20.26 19.4125 20.1664 19.7901 19.7889L22.0542 17.5248C22.5475 17.0315 23.3473 17.0315 23.8406 17.5248L27.1068 20.791C27.6001 21.2843 27.6001 22.0841 27.1068 22.5774L26.3322 23.3521C23.6652 26.019 19.443 26.3191 16.4257 24.0561L14.8992 22.9113C12.6969 21.2595 10.7405 19.3031 9.08872 17.1008L7.94391 15.5743C5.68091 12.557 5.98097 8.33482 8.64794 5.66784Z"
+                />
+              </svg>
+              <a class="footer__contactLink" href="tel:+014 717 XXXX">014 717 XXXX</a>
             </p>
-            <p class="footer__logoSlogan logoText logoText--slogan logoText--sloganFooter">Your Garden | Our Passion</p>
+            <p class="footer__contactItem">
+              <svg
+                class="footer__contactItemIcon"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="footer__contactItemIconColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.00112 12.2143C3 12.4923 3 12.7859 3 13.0963V19.9037C3 22.7775 3 24.2144 3.89278 25.1072C4.78555 26 6.22245 26 9.09626 26H23.3209C26.1947 26 27.6316 26 28.5243 25.1072C29.4171 24.2144 29.4171 22.7775 29.4171 19.9037V13.0963C29.4171 12.7859 29.4171 12.4923 29.416 12.2143L17.1371 18.5224C16.5543 18.8218 15.8628 18.8218 15.28 18.5224L3.00112 12.2143ZM3.07638 10.058C3.20788 10.0678 3.33962 10.1036 3.46429 10.1677L16.2086 16.7149L28.9528 10.1677C29.0775 10.1036 29.2092 10.0678 29.3407 10.058C29.2438 9.06182 29.0237 8.39217 28.5243 7.89278C27.6316 7 26.1947 7 23.3209 7H9.09626C6.22245 7 4.78555 7 3.89278 7.89278C3.39338 8.39217 3.17333 9.06182 3.07638 10.058Z"
+                />
+              </svg>
+              <a class="footer__contactLink" href="mailto:info@greenthumb.com">info@greenthumb.com</a>
+            </p>
+
+            <p class="footer__contactItem">
+              <svg
+                class="footer__contactItemIcon"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="footer__contactItemIconColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.7201 26.8583C18.6941 25.773 25.3491 21.6015 25.3491 14.6874C25.3491 9.3372 21.2415 5 16.1746 5C11.1076 5 7 9.3372 7 14.6874C7 21.6015 13.655 25.773 15.629 26.8583C15.9728 27.0472 16.3764 27.0472 16.7201 26.8583ZM16.1745 18.8392C18.3461 18.8392 20.1065 16.9804 20.1065 14.6874C20.1065 12.3945 18.3461 10.5357 16.1745 10.5357C14.003 10.5357 12.2426 12.3945 12.2426 14.6874C12.2426 16.9804 14.003 18.8392 16.1745 18.8392Z"
+                />
+              </svg>
+              123 Hospitaal Ave, Modimolle 0510
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer__socialMediaBox">
+            <a href="#" class="footer__socialMediaLink" aria-label="Facebook"
+              ><img
+                class="footer__socialMediaIcon"
+                src="public/img/icons/FacebookIcon500X500.png"
+                alt="social media Facebook icon link"
+              />
+            </a>
+            <a href="#" class="footer__socialMediaLink" aria-label="Instagram"
+              ><img
+                class="footer__socialMediaIcon"
+                src="public/img/icons/InstagramIcon500X500.png"
+                alt="social media Instagram icon link"
+              />
+            </a>
+            <a href="#" class="footer__socialMediaLink" aria-label="TikTok"
+              ><img
+                class="footer__socialMediaIcon"
+                src="public/img/icons/TikTokIcon500X500.png"
+                alt="social media Tikok icon link"
+              />
+            </a>
           </div>
         </div>
 
-        <!-- Footer Navigation -->
-        <nav class="footer__nav">
-          <ul class="footer__navList">
-            <li class="footer__navItem"><a class="footer__navLink" href="/">Home</a></li>
-            <li class="footer__navItem"><a class="footer__navLink" href="/about">About</a></li>
-            <li class="footer__navItem"><a class="footer__navLink" href="/services">Services</a></li>
-            <li class="footer__navItem"><a class="footer__navLink" href="/prices">Prices</a></li>
-            <li class="footer__navItem"><a class="footer__navLink" href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- Contact Details -->
-        <div class="footer__contactBox">
-          <p class="footer__contactItem">
-            <svg
-              class="footer__contactItemIcon"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-              class="footer__contactItemIconColor"
-                d="M8.64794 5.66784L9.4226 4.89319C9.9159 4.39989 10.7157 4.39989 11.209 4.89319L14.4752 8.15944C14.9685 8.65274 14.9685 9.45252 14.4752 9.94582L12.2111 12.2099C11.8336 12.5875 11.74 13.1642 11.9788 13.6418C13.3591 16.4024 15.5976 18.6409 18.3582 20.0212C18.8358 20.26 19.4125 20.1664 19.7901 19.7889L22.0542 17.5248C22.5475 17.0315 23.3473 17.0315 23.8406 17.5248L27.1068 20.791C27.6001 21.2843 27.6001 22.0841 27.1068 22.5774L26.3322 23.3521C23.6652 26.019 19.443 26.3191 16.4257 24.0561L14.8992 22.9113C12.6969 21.2595 10.7405 19.3031 9.08872 17.1008L7.94391 15.5743C5.68091 12.557 5.98097 8.33482 8.64794 5.66784Z"
-              />
-            </svg>
-            <a class="footer__contactLink" href="tel:+014 717 XXXX">014 717 XXXX</a>
-          </p>
-          <p class="footer__contactItem">
-            <svg
-              class="footer__contactItemIcon"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-              class="footer__contactItemIconColor"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.00112 12.2143C3 12.4923 3 12.7859 3 13.0963V19.9037C3 22.7775 3 24.2144 3.89278 25.1072C4.78555 26 6.22245 26 9.09626 26H23.3209C26.1947 26 27.6316 26 28.5243 25.1072C29.4171 24.2144 29.4171 22.7775 29.4171 19.9037V13.0963C29.4171 12.7859 29.4171 12.4923 29.416 12.2143L17.1371 18.5224C16.5543 18.8218 15.8628 18.8218 15.28 18.5224L3.00112 12.2143ZM3.07638 10.058C3.20788 10.0678 3.33962 10.1036 3.46429 10.1677L16.2086 16.7149L28.9528 10.1677C29.0775 10.1036 29.2092 10.0678 29.3407 10.058C29.2438 9.06182 29.0237 8.39217 28.5243 7.89278C27.6316 7 26.1947 7 23.3209 7H9.09626C6.22245 7 4.78555 7 3.89278 7.89278C3.39338 8.39217 3.17333 9.06182 3.07638 10.058Z"
-              />
-            </svg>
-            <a class="footer__contactLink" href="mailto:info@greenthumb.com">info@greenthumb.com</a>
+        <div class="footer__copyAndDevBox">
+          <!-- Copyright -->
+          <p class="footer__copyrightBox">
+            <span class="footer__copyright">
+              <span class="footer__copyrightSymbol">&copy;</span>
+              <span id="copyrightYear"></span>
+              <span class="footer__copyrightBusName footer__copyrightBusName--green">GreenThumb</span>
+              <span class="footer__copyrightBusName footer__copyrightBusName--orange">Gardening Services</span>
+            </span>
+            <span class="footer__rightsReserved">All rights reserved</span>
           </p>
 
-          <p class="footer__contactItem">
-            <svg
-              class="footer__contactItemIcon"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                class="footer__contactItemIconColor"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M16.7201 26.8583C18.6941 25.773 25.3491 21.6015 25.3491 14.6874C25.3491 9.3372 21.2415 5 16.1746 5C11.1076 5 7 9.3372 7 14.6874C7 21.6015 13.655 25.773 15.629 26.8583C15.9728 27.0472 16.3764 27.0472 16.7201 26.8583ZM16.1745 18.8392C18.3461 18.8392 20.1065 16.9804 20.1065 14.6874C20.1065 12.3945 18.3461 10.5357 16.1745 10.5357C14.003 10.5357 12.2426 12.3945 12.2426 14.6874C12.2426 16.9804 14.003 18.8392 16.1745 18.8392Z"
-                
+          <!-- Developer Credit -->
+          <div class="footer__dev">
+            <p class="footer__devIntro">designed and developed by:</p>
+            <a class="footer__devLink" target="_blank" href="https://schalkvandyk.com" rel="noopener noreferrer">
+              <img
+                class="footer__devLogo"
+                src="public/img/logo/codexRebootLogo250X150.png"
+                alt="an image of the logo of the developer - Schalk van Dyk t/a codexReboot"
               />
-            </svg>
-            123 Hospitaal Ave, Modimolle 0510
-          </p>
-        </div>
-
-        <!-- Social Media -->
-        <div class="footer__socialMediaBox">
-          <a href="#" class="footer__socialMediaLink" aria-label="Facebook"
-            ><img
-              class="footer__socialMediaIcon"
-              src="public/img/icons/FacebookIcon500X500.png"
-              alt="social media Facebook icon link"
-            />
-          </a>
-          <a href="#" class="footer__socialMediaLink" aria-label="Instagram"
-            ><img
-              class="footer__socialMediaIcon"
-              src="public/img/icons/InstagramIcon500X500.png"
-              alt="social media Instagram icon link"
-            />
-          </a>
-          <a href="#" class="footer__socialMediaLink" aria-label="TikTok"
-            ><img
-              class="footer__socialMediaIcon"
-              src="public/img/icons/TikTokIcon500X500.png"
-              alt="social media Tikok icon link"
-            />
-          </a>
-        </div>
-
-        <!-- Copyright -->
-        <p class="footer__copyrightBox">
-          <span class="footer__copyright">
-            <span class="footer__copyrightSymbol">&copy;</span>
-            <span id="copyrightYear"></span>
-            <span class="footer__copyrightBusName footer__copyrightBusName--green">GreenThumb</span>
-            <span class="footer__copyrightBusName footer__copyrightBusName--orange">Gardening Services</span>
-          </span>
-          <span class="footer__rightsReserved">All rights reserved</span>
-        </p>
-
-        <!-- Developer Credit -->
-        <div class="footer__dev">
-          <p class="footer__devIntro">designed and developed by:</p>
-          <a class="footer__devLink" target="_blank" href="https://schalkvandyk.com" rel="noopener noreferrer">
-            <img
-              class="footer__devLogo"
-              src="public/img/logo/codexRebootLogo250X150.png"
-              alt="an image of the logo of the developer - Schalk van Dyk t/a codexReboot"
-            />
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
