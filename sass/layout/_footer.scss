@@ -7,6 +7,16 @@
   &__container {
     @include displayFlexColumn;
   }
+  /* Footer Logo*/
+  &__logoBox {
+    @include displayFlexColumn;
+    gap: 0;
+  }
+
+  &__logoTextBox {
+    margin-left: 0.25rem;
+  }
+
   /* Contact Item Styles*/
   &__contactBox {
     @include displayFlexColumn;

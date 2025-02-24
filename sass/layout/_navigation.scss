@@ -109,3 +109,19 @@
     }
   }
 }
+
+.footer {
+  &__navList {
+    @include displayFlexColumn;
+    gap: .5rem;
+
+  }
+  &__navLink {
+    border-radius: $br-sm;
+    padding: .5rem 2rem;
+    transition: all .8s;
+  }
+  &__navLink:hover {
+    background-color: $accent-orange;
+  }
+}

@@ -12,6 +12,11 @@
     width: 8rem;
     height: auto;
   }
+  &--footer {
+    display: block;
+    width: 8rem;
+    height: auto;
+  }
 }
 
 @include respond(tab-land) {

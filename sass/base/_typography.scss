@@ -102,6 +102,9 @@
     text-align: center;
     text-shadow: 1px 1px 1px rgba($dark-green, 1);
   }
+  &--sloganFooter {
+    color: rgba($white, 0.85);
+  }
 }
 
 .hero {
@@ -115,6 +118,11 @@
 
 .footer {
   color: rgba($white, .75);
+  &__navLink {
+    font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba($dark-green, 1);
+  }
   &__copyrightBox {
     line-height: 1;
   }
