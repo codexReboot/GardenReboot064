@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.testimonial {
+  background-color: $light-cream;
+  border-radius: $br-sm;
+  box-shadow: $bs-dark;
+  padding: 1rem;
+  width: min(100%, 42rem);
+  &__img {
+    float: left;
+    object-fit: cover;
+    border: 2px solid $accent-orange;
+    border-radius: 100%;
+    box-shadow: 2px 2px 12px 3px rgba($dark-green, 0.35);
+    width: clamp(6rem, 18vw, 10rem);
+    height: clamp(6rem, 18vw, 10rem);
+    shape-outside: circle();
+    margin-right: 2rem;
+  }
+}

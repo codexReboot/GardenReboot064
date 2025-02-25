@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.sidebar {
+  @include displayFlexColumn;
+  gap: 5rem;
+  background-color: $accent-orange;
+  padding: 2rem 1rem;
+  &__testimonials {
+    @include displayFlexColumn;
+    gap: 2rem;
+  }
+  &__contact {
+    @include displayFlexColumn;
+    gap: 2rem;
+  }
+}
+
+.contact {
+  &__contactAndSocialMediaBox {
+    @include displayFlexColumn;
+    gap: 3rem;
+  }
+
+  /* Contact Item Styles*/
+  &__contactBox {
+    @include displayFlexColumn;
+    gap: 0.5rem;
+  }
+
+  &__contactItem {
+    @include displayFlexRow;
+    gap: 0.25rem;
+  }
+
+  &__contactItem:nth-child(2) {
+    gap: 0.75rem;
+  }
+
+  &__socialMediaBox {
+    @include displayFlexColumn;
+    gap: 1rem;
+  }
+  &__socialMediaIconsBox {
+    @include displayFlexRow;
+    gap: 3rem;
+  }
+  &__socialMediaLink {
+    transition: all 0.3s;
+  }
+
+  &__socialMediaLink:hover {
+    box-sizing: $bs-btnHover;
+    transform: scale(1.1);
+  }
+}
